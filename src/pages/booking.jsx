@@ -77,7 +77,7 @@ const Booking = () => {
 
     if (error) {
   console.error("Erreur lors de la création du rendez-vous :", error);
-  alert(`Erreur lors de la réservation : ${error.message}`);
+  alert(`Erreur lors de la réservation du rendez-vous : ${error.message}`);
 }
 
   };

@@ -30,7 +30,7 @@ const CreateAdmin = () => {
     ]);
 
     if (insertError) {
-      setStatus("Erreur insertion utilisateur : " + insertError.message);
+      setStatus("Erreur de l'inscription utilisateur : " + insertError.message);
     } else {
       setStatus("✅ Administrateur créé avec succès !");
     }
