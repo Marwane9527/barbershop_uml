@@ -1,4 +1,3 @@
--- Table : utilisateurs
 CREATE TABLE utilisateurs (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
   email TEXT NOT NULL UNIQUE,
@@ -9,7 +8,6 @@ CREATE TABLE utilisateurs (
   date_mise_a_jour TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Table : lieux
 CREATE TABLE lieux (
   id SERIAL PRIMARY KEY,
   nom TEXT NOT NULL,
@@ -19,18 +17,16 @@ CREATE TABLE lieux (
   pays TEXT,
 );
 
--- Table : services
 CREATE TABLE services (
   id SERIAL PRIMARY KEY,
   nom TEXT NOT NULL,
   description TEXT,
   prix NUMERIC(10, 2) NOT NULL,
-  duree INTEGER NOT NULL, -- en minutes
+  duree INTEGER NOT NULL, 
   date_creation TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   date_mise_a_jour TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Table : rendez_vous
 CREATE TABLE rendez_vous (
   id SERIAL PRIMARY KEY,
   client_id UUID NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,
@@ -44,7 +40,6 @@ CREATE TABLE rendez_vous (
   date_mise_a_jour TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Table : avis
 CREATE TABLE avis (
   id SERIAL PRIMARY KEY,
   utilisateur_id UUID NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,
@@ -56,7 +51,6 @@ CREATE TABLE avis (
   date_creation TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Table : disponibilités coiffeurs
 CREATE TABLE disponibilites_coiffeurs ( 
   id SERIAL PRIMARY KEY,
   coiffeur_id UUID NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,

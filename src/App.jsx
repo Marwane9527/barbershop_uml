@@ -25,7 +25,6 @@ function App() {
       if (user) {
         setConnected(true);
 
-        // récupère le rôle depuis la table utilisateurs
         const { data: profil, error } = await supabase
           .from("utilisateurs")
           .select("role")
@@ -54,7 +53,7 @@ function App() {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    window.location.reload(); // simple 
+    window.location.reload(); 
   };
 
   return (
