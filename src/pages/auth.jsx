@@ -39,7 +39,7 @@ const Auth = () => {
             id: data.user.id,
             email: form.email,
             nom_complet: form.nom_complet,
-            role: "client", // rôle fixé ici
+            role: "client", 
           },
         ]);
 

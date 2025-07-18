@@ -125,7 +125,7 @@ const BarberDashboard = () => {
                 <td>
                   <input
                     type="checkbox"
-                    checked={dispos[i]?.est_disponible ?? (i !== 1)} // fermé par défaut le lundi
+                    checked={dispos[i]?.est_disponible ?? (i !== 1)} // fermé par défaut le lundi, car le barbe est ouvert de mardi à dimanche
                     onChange={(e) =>
                       handleDispoChange(i, e.target.checked)
                     }

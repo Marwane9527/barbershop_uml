@@ -141,7 +141,7 @@ const AdminDashboard = () => {
         </div>
       )}
 
-      {/* UTILISATEURS */}
+      
 {activeTab === "users" && (
   <div className="mt-3">
     <h4 className="mb-3">Liste des utilisateurs</h4>
@@ -188,7 +188,7 @@ const AdminDashboard = () => {
 )}
 
 
-      {/* SERVICES */}
+      
       {activeTab === "services" && (
         <div className="mt-3 col-md-8 mx-auto text-start">
           <h4>{editingServiceId ? "Modifier le service" : "Ajouter un service"}</h4>
