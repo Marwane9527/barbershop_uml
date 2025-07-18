@@ -5,7 +5,7 @@ const CreateAdmin = () => {
   const [status, setStatus] = useState("");
 
   const handleCreate = async () => {
-    setStatus("Création en cours...");
+    setStatus("Création de votre compte en cours...");
 
     const { data, error } = await supabase.auth.signUp({
       email: "marwane.merezak.pro@gmail.com",
