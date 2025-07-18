@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
-import Home from "./pages/Home";
-import Booking from "./pages/Booking";
+import Home from "./pages/home";
+import Booking from "./pages/booking";
 import Auth from "./pages/Auth";
 import AdminDashboard from "./pages/admin/adminDashboard";
-import BarberDashboard from "./pages/BarberDashboard";
+import BarberDashboard from "./pages/barberDashboard";
 import CreateAdmin from "./pages/CreateAdmin";
 import { supabase } from "./supabaseClient";
 import Avis from "./pages/avis";
@@ -54,7 +54,7 @@ function App() {
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    window.location.reload(); // simple pour rafraîchir l’état
+    window.location.reload(); // simple 
   };
 
   return (
