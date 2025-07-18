@@ -36,7 +36,7 @@ const Home = () => {
     if (!error) {
       setServices(data);
     } else {
-      console.error("Erreur de chargement des services :", error.message);
+      console.error("Erreur de chargement des coupes de coiffures :", error.message);
     }
   };
 
