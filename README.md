@@ -1,12 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Le projet intitulé Barber Shop est une application web conçue dans le cadre d’un travail académique, visant à simuler la digitalisation complète d’un salon de coiffure. Il ne s’agit pas d’un produit destiné à être mis en ligne, mais d’un prototype fonctionnel, pensé pour démontrer la capacité à concevoir, modéliser et développer une application web cohérente. Ce projet sera présenté à l’oral lors d’une soutenance, avec comme objectif principal d’évaluer la compréhension des différentes étapes de développement logiciel, de la conception à la présentation technique.
